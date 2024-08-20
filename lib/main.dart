@@ -8,11 +8,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Profile Card',
       theme: ThemeData(
         primarySwatch: Colors.lightGreen,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Profile card'),
     );
   }
 }
@@ -50,6 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Container(
           padding: const EdgeInsets.all(20.0),
           child: Card(
+            color: Colors.amber,
             child: Container(
               padding: const EdgeInsets.all(20.0),
               child: Column(
@@ -79,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Icon(
-                        Icons.school,
+                        Icons.computer,
                         size: 30.0,
                         color: Colors.black,
                       ),
